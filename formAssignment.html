@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <table border="1px" cellspacing="5" align="center">
+        <tr>    
+            <td rowspan="13">
+                <img src="../images/doc.png" height="600" width="500" alt="image not loading"/>
+            </td>
+        </tr>
+        <tr align="center">
+            <tr>
+                <td colspan="3" align="center"><h1><Strong>Doctor Appointment Form</Strong></h1></td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="red"></td>
+            </tr>
+            <tr>
+                <td >Appointment<br> Data</td>
+                <td colspan="3"><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td >Appointment<br> Time</td>
+                <td colspan="2"><input type="time" name="time"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" placeholder="First" name="fname"></td>
+                <td><input type="text" placeholder="Last" name="lname"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>Male<input type="radio" name="radioM">Female<input type="radio" name="radioF"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td colspan="2"><input type="number"  placeholder="####" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" placeholder="city" name="city"></td>
+                <td><input type="text" placeholder="state" name="state"></td>
+            </tr>
+            <tr>
+                <td>Your Query</td>
+                <td colspan="2"><textarea cols="33" rows="5" name="Query"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="2">Appointment Type</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Select which appointment type&#40;s&#41; you require</label>
+                    <br>
+                    <input type="checkbox" name="check1"> Cervix checkup
+                    <br>
+                    <input type="checkbox" name="check2"> Heart checkup
+                    <br>
+                    <input type="checkbox" name="check3"> Eye check-up
+                    <br>
+                    <input type="checkbox" name="check4"> Hearing Test
+                </td>
+            </tr>
+        </tr>
+            
+    </table>
+</body>
+</html>

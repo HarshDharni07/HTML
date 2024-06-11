@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Form</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td valign="top">
+                <img src="../images/doc.png" alt="Doctor" width="500">
+            </td>
+            <td align="center">
+                <h1>Doctor Appointment Form</h1>
+                <hr color="red">
+                <form>
+                    <table cellspacing="3">
+                        <tr>
+                            <td>Appointment <br> Date</td>
+                            <td><input type="date" name="appointment_date"></td>
+                        </tr>
+                        <tr>
+                            <td>Appointment <br> Time</td>
+                            <td><input type="time" name="appointment_time"></td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>
+                                <input type="text" name="first_name" placeholder="First">
+                                <input type="text" name="last_name" placeholder="Last">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td><input type="tel" name="phone" placeholder="####"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>
+                                <input type="text" name="city" placeholder="city">
+                                <input type="text" name="state" placeholder="state">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Your Query</td>
+                            <td><textarea name="query" rows="4" cols="40"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" valign="top">Appointment <br>Type</td>
+                            
+                        </tr>
+                        <tr>
+                            <td rowspan="2" valign="top">
+                                <label> which appointment type&#40;s&#41; you require</label><br>
+                                <input type="checkbox" id="cervix_checkup" name="appointment_type" value="Cervix checkup">
+                                <label for="cervix_checkup">Cervix checkup</label><br>
+                                <input type="checkbox" id="heart_checkup" name="appointment_type" value="Heart checkup">
+                                <label for="heart_checkup">Heart checkup</label><br>
+                                <input type="checkbox" id="eye_checkup" name="appointment_type" value="Eye check-up">
+                                <label for="eye_checkup">Eye check-up</label><br>
+                                <input type="checkbox" id="hearing_test" name="appointment_type" value="Hearing Test">
+                                <label for="hearing_test">Hearing Test</label><br>
+                                <input type="submit" value="Send"><br>
+                            </td>
+                        </tr> 
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

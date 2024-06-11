@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFrame Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+        }
+        iframe {
+            border: none;
+            width: 45%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <table border="">
+        <tr>
+            <td>
+                <!-- First iframe to display list of songs -->
+                <iframe src="hindisongs.html" id ="songsFrame"></iframe>
+            </td>
+            <td>
+                <!-- Second iframe to display audio player -->
+                <iframe src="audioplayer.html" id ="audioFrame"></iframe>
+
+            </td>
+        </tr>
+    </table>
+    <!-- <h1>Two Iframes Example</h1> -->
+
+    <!-- First iframe to display list of songs
+    <iframe src="hindisongs.html" id="songsFrame"></iframe>
+
+    Second iframe to display audio player
+    <iframe src="audioplayer.html" id="audioFrame"></iframe> -->
+
+</body>
+</html>
