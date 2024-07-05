@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Songs Collection</title>
+</head>
+<body>
+    
+    <ol>
+        <li onclick="playAudio('../songs/Proper Patola Diljit Dosanjh 320 Kbps.mp3')">Punjabi Song 1</li>
+        <li onclick="playAudio('../songs/Kinni Kinni Ghost 320 Kbps.mp3')">Punjabi Song 2</li>
+        <li onclick="playAudio('../songs/Naina Crew 320 Kbps.mp3')">Punjabi Song 3</li>
+    </ol>
+
+    <script >
+        function playAudio(audioSrc) {
+           
+            var downloadFrame = parent.document.getElementById('downloadFrame');
+      
+            downloadFrame.src = "audioplayer.html?audioSrc=" + encodeURIComponent(audioSrc);
+        }
+    </script>
+</body>
+</html>
